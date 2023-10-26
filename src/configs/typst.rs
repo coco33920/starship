@@ -23,7 +23,7 @@ impl<'a> Default for TypstConfig<'a> {
         TypstConfig {
             format: "via [$symbol($version )]($style)",
             version_format: "v${raw}",
-            symbol: "̈Ұ̈ ",
+            symbol: "Ұ̈ ",
             style: "bright-blue",
             disabled: false,
             detect_extensions: vec!["typ"],
