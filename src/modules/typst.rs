@@ -66,10 +66,10 @@ fn get_version(context: &Context) -> Option<String> {
 }
 #[cfg(test)]
 mod tests {
+    use crate::test::ModuleRenderer;
+    use nu_ansi_term::Color;
     use std::fs::File;
     use std::io;
-    use nu_ansi_term::Color;
-    use crate::test::ModuleRenderer;
     #[test]
     fn read_typst_not_present() -> io::Result<()> {
         let dir = tempfile::tempdir()?;
@@ -88,9 +88,8 @@ mod tests {
         File::create(dir.path().join("test.typ"))?.sync_all()?;
 
         let actual = ModuleRenderer::new("typst").path(dir.path()).collect();
-        let expected = Some(format!("via {}",Color::LightBlue.paint("\u{308}Ұ̈ 0.8.0 ")));
-        assert_eq!(expected,actual);
+        let expected = Some(format!("via {}", Color::LightBlue.paint("\u{308}Ұ̈ 0.8.0 ")));
+        assert_eq!(expected, actual);
         dir.close()
     }
-
 }
