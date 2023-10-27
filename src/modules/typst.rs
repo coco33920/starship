@@ -90,7 +90,7 @@ mod tests {
         let actual = ModuleRenderer::new("typst").path(dir.path()).collect();
         let expected = Some(format!(
             "via {}",
-            Color::Rgb(0,147,167).bold().paint("ẗ 0.8.0 ")
+            Color::Rgb(0, 147, 167).bold().paint("ẗ 0.8.0 ")
         ));
         assert_eq!(expected, actual);
         dir.close()

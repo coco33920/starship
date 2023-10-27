@@ -409,7 +409,7 @@ fn parse_color_string(
         "bright-purple" => Some(Color::LightPurple),
         "bright-cyan" => Some(Color::LightCyan),
         "bright-white" => Some(Color::LightGray),
-        "eastern-blue" => Some(Color::Rgb(0,147,167)),
+        "eastern-blue" => Some(Color::Rgb(0, 147, 167)),
         _ => None,
     };
 
