@@ -1682,7 +1682,7 @@
         "detect_folders": [],
         "disabled": false,
         "format": "via [$symbol($version )]($style)",
-        "style": "bright-blue",
+        "style": "bold #0097A7",
         "symbol": "ẗ ",
         "version_format": "v${raw}"
       },
@@ -5742,7 +5742,7 @@
           "type": "string"
         },
         "style": {
-          "default": "bright-blue",
+          "default": "bold #0097A7",
           "type": "string"
         },
         "disabled": {
