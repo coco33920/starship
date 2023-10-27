@@ -24,7 +24,7 @@ impl<'a> Default for TypstConfig<'a> {
             format: "via [$symbol($version )]($style)",
             version_format: "v${raw}",
             symbol: "ẗ ",
-            style: "bold eastern-blue",
+            style: "bold #0093A7",
             disabled: false,
             detect_extensions: vec!["typ"],
             detect_files: vec!["template.typ"],
