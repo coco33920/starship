@@ -1683,7 +1683,7 @@
         "disabled": false,
         "format": "via [$symbol($version )]($style)",
         "style": "bright-blue",
-        "symbol": "\uD835\uDC2D ",
+        "symbol": "ẗ ",
         "version_format": "v${raw}"
       },
       "allOf": [
@@ -5738,7 +5738,7 @@
           "type": "string"
         },
         "symbol": {
-          "default": "\uD835\uDC2D ",
+          "default": "ẗ ",
           "type": "string"
         },
         "style": {
